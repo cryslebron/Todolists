@@ -49,12 +49,16 @@ app.put('/api/todos/:id', (req, res, next) => {
     let updatedTodo = todoList.find(function(todo) {
         if (todo.id) {
             return todo.id === parseInt(req.params.id);
-        }
+    }
+}
     });
-    
+
     
 // DELETE /api/todos/:id
+app.delete('/todo/:id', (req, res) =>{
 
+}
+)
 
 app.listen(3000, function(){
     console.log('Todo List API is now listening on port 3000...');
